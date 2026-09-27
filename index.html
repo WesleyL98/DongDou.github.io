@@ -1,1 +1,37 @@
-
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183b3a">
+  <meta name="description" content="豆弟和咚地的晚间小日常。摇一摇兔粮，看两只小兔子开心地转圈、站起来找晚饭。">
+  <title>豆弟和咚地 · 喂饭啦</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23183b3a'/%3E%3Cellipse cx='23' cy='19' rx='6' ry='13' fill='%23f5c58c'/%3E%3Cellipse cx='41' cy='19' rx='6' ry='13' fill='%23f5c58c'/%3E%3Cellipse cx='32' cy='42' rx='19' ry='16' fill='%23f5c58c'/%3E%3Ccircle cx='25' cy='40' r='2' fill='%23183b3a'/%3E%3Ccircle cx='39' cy='40' r='2' fill='%23183b3a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="home">
+    <header class="heading">
+      <div><p class="eyebrow">我们家的兔子</p><h1>豆弟<span class="amp"> & </span>咚地</h1></div>
+      <div class="evening"><span class="moon" aria-hidden="true">☾</span><span>晚饭前的小日常</span></div>
+    </header>
+    <section class="room" id="room" aria-label="豆弟和咚地在客厅的大地毯上">
+      <img class="room-art" src="assets/room.png" alt="暖灯照着客厅里柔软的大地毯" fetchpriority="high">
+      <div class="room-shade" aria-hidden="true"></div>
+      <div class="scene-note"><span class="scene-state" id="sceneState">安静的晚间</span><p id="sceneCaption">两团毛茸茸，正在发呆。</p></div>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="关闭声音" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="muted" d="m16 9 5 6m0-6-5 6"/></svg></button>
+      <div class="rabbit rabbit-gold" id="doudi" role="img" aria-label="豆弟，金黄色长毛立耳兔，正在休息"><span class="rabbit-shadow"></span><div class="rabbit-body"><div class="rabbit-sprite"></div></div><span class="rabbit-name">豆弟</span><span class="thought">呼…</span></div>
+      <div class="rabbit rabbit-brown" id="dongdi" role="img" aria-label="咚地，巧克力色垂耳兔，正在休息"><span class="rabbit-shadow"></span><div class="rabbit-body"><div class="rabbit-sprite"></div></div><span class="rabbit-name">咚地</span><span class="thought">z z z</span></div>
+      <div class="food-hand" id="foodHand" aria-hidden="true"><img src="assets/hand.png" alt="一只手拿着装了半杯兔粮的透明量杯"><span class="rattle-word">沙沙 · 沙沙</span></div>
+      <div class="controls">
+        <p id="status" role="status" aria-live="polite">一听到这个声音，就藏不住开心。</p>
+        <button class="feed-button" id="feedButton" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h11v12H5zM16 9h3a2 2 0 0 1 0 5h-3M5 11h11M8 4V2m5 2V2"/></svg><span id="feedLabel">喂饭啦</span><span class="button-spark" aria-hidden="true">✦</span></button>
+        <button class="reset-button" id="resetButton" type="button" hidden>休息一下</button>
+      </div>
+      <div class="loading" id="loading"><span></span>小兔子马上到家…</div>
+    </section>
+    <footer><span>豆弟的立耳，咚地的垂耳，还有每天期待的那半杯兔粮。</span><span class="footer-note">点击按钮，听听它们的晚饭铃声</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
